@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-09a5dd60","path":"/basics/lerp/lerp-translate/","title":"Lerp 漸進移動","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1666767576000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/lerp/lerp-translate/README.md"}');export{e as data};

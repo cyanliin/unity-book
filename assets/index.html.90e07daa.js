@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-d312bf00","path":"/basics/object/basic/","title":"物件基礎","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660235110000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/object/basic/README.md"}');export{e as data};

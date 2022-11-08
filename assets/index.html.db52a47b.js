@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-de880fc4","path":"/basics/quick-start/","title":"快速開始","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660078217000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/quick-start/README.md"}');export{t as data};

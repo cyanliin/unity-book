@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1654dce6","path":"/basics/quick-start/physics/","title":"添加物理效果 Physics","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660078217000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/quick-start/physics/README.md"}');export{t as data};

@@ -1,0 +1,28 @@
+import{_ as n,o as s,c as a,e}from"./app.74848dc1.js";const t="/unity-book/assets/countdown.17efc95f.gif",p={},c=e('<h1 id="使用-time-time-計時" tabindex="-1"><a class="header-anchor" href="#使用-time-time-計時" aria-hidden="true">#</a> 使用 Time.time 計時</h1><p>Time.time 會回傳遊戲開始到現在所經過的秒數。可以在特定時間紀錄當下 Time.time 並在之後比對差異，進而得出經過的秒數。</p><p>通常用於遊戲時間的顯示、技能冷卻計算。</p><div class="custom-container tip"><p class="custom-container-title">TIP</p><p>Time.time 是個唯讀的變數，它由 Unity 引擎在每個 Frame 中累加，無法讓人任意更動或歸零。</p></div><h2 id="倒數時間顯示" tabindex="-1"><a class="header-anchor" href="#倒數時間顯示" aria-hidden="true">#</a> 倒數時間顯示</h2><p><img src="'+t+`" alt="countdown"></p><div class="language-csharp line-numbers-mode" data-ext="cs"><pre class="language-csharp"><code><span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Collections</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Collections<span class="token punctuation">.</span>Generic</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">UnityEngine</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">UnityEngine<span class="token punctuation">.</span>UI</span><span class="token punctuation">;</span> <span class="token comment">// 使用 Text 類別必須引入</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LevelController</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">MonoBehaviour</span></span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">Text</span> countDownTxt<span class="token punctuation">;</span> <span class="token comment">// 文字 UI 元件 (拖曳指定)</span>
+
+    <span class="token keyword">private</span> <span class="token class-name"><span class="token keyword">float</span></span> sceneTimeMax <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span> <span class="token comment">// 倒數時間 30 秒</span>
+    <span class="token keyword">private</span> <span class="token class-name"><span class="token keyword">float</span></span> sceneTimeStart <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 記錄進入場景時的秒數</span>
+
+    <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 記錄進入場景時的秒數</span>
+        sceneTimeStart <span class="token operator">=</span> Time<span class="token punctuation">.</span>time<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 計算剩餘秒數</span>
+        <span class="token class-name"><span class="token keyword">float</span></span> timeLeft <span class="token operator">=</span> sceneTimeMax <span class="token operator">-</span> <span class="token punctuation">(</span>Time<span class="token punctuation">.</span>time <span class="token operator">-</span> sceneTimeStart<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 更新倒數計時 UI (四捨五入到小數第一位)</span>
+        countDownTxt<span class="token punctuation">.</span>text <span class="token operator">=</span> <span class="token punctuation">(</span>Mathf<span class="token punctuation">.</span><span class="token function">Round</span><span class="token punctuation">(</span>timeLeft <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7),o=[c];function i(l,u){return s(),a("div",null,o)}const k=n(p,[["render",i],["__file","index.html.vue"]]);export{k as default};

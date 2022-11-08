@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5d51613c","path":"/basics/quick-start/view-control/","title":"調整編輯視角","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660078217000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/quick-start/view-control/README.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3e5d6f2a","path":"/basics/rolling-ball/enable-trigger/","title":"打勾 Trigger","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1664385101000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/rolling-ball/enable-trigger/README.md"}');export{e as data};

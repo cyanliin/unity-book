@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-067eaa5a","path":"/patterns/","title":"遊戲設計模式","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1659987950000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"patterns/README.md"}');export{t as data};

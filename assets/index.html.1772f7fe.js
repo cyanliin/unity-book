@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-ffab2900","path":"/basics/quick-start/build-game/","title":"發佈遊戲","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660078217000,"contributors":[{"name":"Vincent Chen","email":"grass527@gmail.com","commits":1}]},"filePathRelative":"basics/quick-start/build-game/README.md"}');export{t as data};
